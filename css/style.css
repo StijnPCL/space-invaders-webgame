@@ -7,6 +7,9 @@ body {
 #space-invaders-logo {
     max-width: 500px;
     padding: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #start-button,
@@ -42,25 +45,6 @@ body {
     max-width: 400px;
 }
 
-#game-container {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 300px;
-    background-color: white;
-}
-
-#arena {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
 #main-menu {
     display: flex;
     flex-direction: column;
@@ -68,3 +52,12 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
+/* game.php */
+
+#speelveld {
+    background-color: #000;
+    border: 1px solid #fff;
+    padding: 30px;
+  }
+  

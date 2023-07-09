@@ -6,13 +6,6 @@ const instructionButton = document.getElementById('instruction-button');
 const instructionOverlay = document.getElementById('instruction-overlay');
 const closeButton = document.getElementById('close-button');
 
-startButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    mainMenu.style.display = 'none';
-    gameContainer.style.display = 'flex';
-    gameStatus.textContent = 'Spel is gestart';
-});
-
 instructionButton.addEventListener('click', function (event) {
     event.preventDefault();
     instructionOverlay.style.display = 'flex';
