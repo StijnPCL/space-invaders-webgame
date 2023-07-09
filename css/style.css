@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: black;
+}
+
+#space-invaders-logo {
+    max-width: 500px;
+    padding: 50px;
+}
+
+#home-button,
+#instruction-button {
+    display: block;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#home-button:hover,
+#instruction-button:hover {
+    color: yellow;
+}
+
+/* Stijl voor de instructiepop-up */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.instruction-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px
+}
