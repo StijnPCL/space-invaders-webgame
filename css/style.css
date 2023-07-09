@@ -9,7 +9,7 @@ body {
     padding: 50px;
 }
 
-#home-button,
+#start-button,
 #instruction-button {
     display: block;
     color: white;
@@ -17,7 +17,7 @@ body {
     padding: 10px;
 }
 
-#home-button:hover,
+#start-button:hover,
 #instruction-button:hover {
     color: yellow;
 }
@@ -39,5 +39,32 @@ body {
 .instruction-content {
     background-color: #fff;
     padding: 20px;
-    max-width: 400px
+    max-width: 400px;
+}
+
+#game-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: white;
+}
+
+#arena {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }

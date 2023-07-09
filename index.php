@@ -8,9 +8,15 @@
 </head>
 
 <body>
-    <img src="img/space_invaders_logo.png" id="space-invaders-logo" alt="Space Invaders Logo">
-    <a href="#" id="home-button">Start Spel</a>
-    <a href="#" id="instruction-button">Instructies</a>
+    <div id="main-menu">
+        <img src="img/space_invaders_logo.png" id="space-invaders-logo" alt="Space Invaders Logo">
+        <a href="#" id="start-button">Start Spel</a>
+        <a href="#" id="instruction-button">Instructies</a>
+    </div>
+
+    <div id="game-container">
+        
+    </div>
 
     <div id="instruction-overlay" class="overlay">
         <div class="instruction-content">
@@ -27,4 +33,6 @@
 
     <script src="js/script.js"></script>
 </body>
+
+
 </html>
