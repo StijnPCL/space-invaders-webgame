@@ -2,10 +2,11 @@ body {
     font-family: sans-serif;
     text-align: center;
     background-color: black;
+    overflow: hidden;
 }
 
 #space-invaders-logo {
-    max-width: 500px;
+    max-width: 400px;
     padding: 50px;
     display: block;
     margin-left: auto;
@@ -62,6 +63,7 @@ body {
   }
 
 #scoreboard {
+    margin-top: -50px;
     color: white;
 }
   

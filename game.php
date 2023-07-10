@@ -9,11 +9,10 @@
 </head>
 <body>
     <img src="img/space_invaders_logo.png" id="space-invaders-logo">
-    <canvas id="speelveld"></canvas>
-
     <div id="scoreboard">
         <p>Current Score: <span id="current-score">0</span></p>
         <p>High Score: <span id="high-score">0</span></p>
     </div>
+    <canvas id="speelveld"></canvas>
 </body>
 </html>
