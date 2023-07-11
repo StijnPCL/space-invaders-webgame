@@ -12,6 +12,7 @@ let ruimteschip, ruimteschipAfbeelding, ruimteschipSnelheidX; // Variabelen voor
 let aliens, alienAfbeelding, alienGridSize, alienGridStartX, alienGridStartY, alienSnelheid, alienRichting; // Variabelen voor de aliens
 let gameOver; // Variabele om bij te houden of het spel voorbij is
 let kogels, kogelSnelheidY, kogelBreedte, kogelHoogte; // Variabelen voor de kogels
+let score; // Variabele voor de score
 
 window.onload = function () {
   initialize();
@@ -54,6 +55,8 @@ function initialize() {
   kogelSnelheidY = -8; // Snelheid waarmee de kogels verticaal bewegen
   kogelBreedte = 4; // Breedte van de kogels in pixels
   kogelHoogte = 25; // Hoogte van de kogels in pixels
+
+  score = 0; // Score bijhouden
 }
 
 // Laadt de afbeeldingen van het ruimteschip en de aliens
@@ -66,7 +69,7 @@ function loadImages() {
 function loadImage(src) {
   const image = new Image(); // Maak een nieuw Image-object
   image.src = src; // Stel de bron van de afbeelding in
-  return image; // Retourneer het Image-object
+  return image; // Return het Image-object
 }
 
 // Genereert een nieuw rooster van aliens op het speelveld
@@ -124,6 +127,8 @@ function update() {
       aliens.splice(alienIndexToRemove, 1); // Verwijder de geselecteerde alien uit de array van aliens
       kogels.splice(kogels.indexOf(kogel), 1); // Verwijder de huidige kogel uit de array van kogels
 
+      score += 10; // Verhoog de score met 10
+
       if (aliens.length === 0) {
         gameOver = true; // Het spel is voorbij als er geen aliens meer over zijn
         checkGameOver();
@@ -132,6 +137,8 @@ function update() {
   });
 
   kogels = kogels.filter((kogel) => kogel.y > 0); // Verwijder kogels die buiten het speelveld zijn gegaan
+
+  document.getElementById("current-score").textContent = score; // Update de score in het HTML-element
 }
 
 // Tekent een afbeelding op het speelveld
